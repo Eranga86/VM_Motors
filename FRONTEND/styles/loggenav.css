@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');
+@import url(https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css);
+
+body {
+  background-color: #eeeeee;
+}
+
+.navbar-nav > li > a {
+  text-transform: uppercase;
+  font-size: 13px;
+  margin-right: 20px;
+  color: #ffffff;
+}
+
+.navbar-toggler {
+  padding: .20rem .50rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: transparent;
+  border: 1px solid rgb(255, 255, 255);
+}
+
+/*.nav-link {
+  color: rgb(162, 0, 0) !important;
+  font-size: medium !important;
+}*/
+
+.nav-link {
+  background: linear-gradient(90deg, #051747 0%, #4f77ef 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: medium !important;
+}
+
+.wrapper {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  background-color: #020634;
+  clip-path: polygon(81% 0, 100% 0, 100% 50%, 100% 100%, 71% 100%);
+  transition: 1s all;
+}
+
+.navbar-brand {
+  
+ 
+  font-size: 27px;
+
+  font-size: 24px;
+  font-weight: bold;
+  color: #0f0d4d !important;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.navbar-brand img {
+  width: 80px;
+  height: 50px;
+}
+
+.navbar-red:hover .wrapper {
+  clip-path: polygon(81% 0, 100% 0, 100% 50%, 100% 100%, 65% 100%);
+}
+
+.navbar-brand:hover {
+  color: #ffffff;
+}
+
+.navbar-red {
+  background-color: #f7f7f7; /* Nav bar background color */
+  color: #ffffff;
+}
+
+.all-show {
+  z-index: 10;
+}
+
+.navbar .submenu {
+  position: absolute;
+  background-color: white;
+  width: 240px;
+  display: none;
+  font-size: medium !important;
+}
+
+.navbar .submenu2 {
+  position: absolute;
+  left: 100%;
+  width: 240px;
+  top: 0;
+  background-color: white;
+  display: none;
+  font-size: medium !important;
+}
+  .nav-item{
+    list-style: none;
+    margin-right: 20px; /* Add space between nav items */
+    
+  }
+.navbar .nav-item:hover > .submenu {
+  display: block;
+ 
+}
+
+.navbar .submenu .nav-item:hover > .submenu2 {
+  display: block;
+}
+
+.navbar .nav-item a:hover {
+  background-color: #c4c5c6;
+  color: #02101c;
+}
+
+.notification {
+  position: relative;
+  margin-right: auto;
+  display: inline-block;
+}
+
+.notification .badge {
+  position: absolute;
+  top: -5px;
+  right: auto;
+  border-radius: 50%;
+  background-color: rgb(134, 12, 18);
+  color: white;
+  padding: 5px 8px;
+  font-size: 10px;
+}
+
+.lbutton {
+  color: #0f063b !important;
+  text-decoration: none !important;
+  background-color: #f5f6fb;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s;
+ 
+}
+
+.lbutton:hover {
+  background-color: #3b3b73;
+  transform: scale(1.05);
+}
+
+.lbutton:active {
+  background-color: #010428;
+  transform: scale(0.98);
+}
+
+.lbutton:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+
+.search-container {
+  display: flex;
+  align-items: center;
+  margin-left: auto; /* Push the search bar to the far right */
+      
+}
+
+.search-container button i {
+  margin-left: 5px; /* Adds spacing between the icon and the edge */
+}
+
+.search-container input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  width: 200px;
+}
+
+.search-container button {
+  padding: 10px;
+  background-color: #020634;
+  border: 1px solid #020634;
+  border-left: none;
+  color: #f7f7f7;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 0 5px 5px 0;
+}
+
+.search-container button i {
+  margin-left: 5px; /* Adds spacing between the icon and the edge */
+}
+
+.search-container input[type="text"] {
+  margin-right: 5px; /* Adds spacing between input and button */
+}

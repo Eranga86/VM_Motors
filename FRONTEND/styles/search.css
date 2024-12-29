@@ -1,0 +1,82 @@
+/* SearchResults.css */
+
+.search-results {
+    padding: 50px 20px; /* Adjust padding for top/bottom and left/right */
+  }
+  
+  .search-results-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px; /* Add space below the title */
+    border-bottom: 2px solid #ccc; /* Smart border styling */
+    padding-bottom: 10px; /* Space between title and border */
+  }
+  
+  .no-results-message {
+    text-align: center;
+    font-style: italic;
+    color: #777;
+  }
+  
+  .cards {
+    transition: transform 0.2s ease-in-out;
+    margin-left: 20px; /* Create left-biased effect */
+    margin-right: 0; /* Ensure no right margin */
+  }
+  
+  .cards:hover {
+    transform: translateY(-5px);
+  }
+  
+  .cards-link {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .cards-body {
+    padding: 1.25rem;
+  }
+  
+  .cards-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+  }
+  
+  .cards-text {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .cards-img-top {
+    max-height: 200px;
+    object-fit: cover;
+  }
+  
+  .container {
+    max-width: 1200px;
+  }
+  
+  .row {
+    margin: 0 -15px;
+  }
+  
+  .col-md-4 {
+    padding: 0 15px;
+  }
+
+  .btn-logins{
+
+    color: midnightblue;
+    background-color: aliceblue;
+  }
+  
+  @media (max-width: 768px) {
+    .col-md-4 {
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin-left: 0; /* Reset margin for smaller screens */
+    }
+  }
+  

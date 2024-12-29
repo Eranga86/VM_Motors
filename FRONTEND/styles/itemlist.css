@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');
+@import url(https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css);
+@import url(https://code.jquery.com/jquery-3.4.1.slim.min.js);
+@import url(https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js);
+@import url(https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css);
+@import url(https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css);
+@import url(//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css);
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap);
+
+
+/*item list container*/
+.item-list-container {
+    padding: 0 20px;
+  }
+  
+  .item-list-wrapper {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .item-list {
+    display: flex;
+    align-items: center;
+    height: 300px;
+    transform: translateX(0);
+    transition: all 1s ease-in-out;
+  }
+  
+  .item-list-item {
+    margin-right: 30px;
+    position: relative;
+  }
+  
+  .item-list-item:hover .item-list-item-img {
+    transform: scale(1.2);
+    margin: 0 30px;
+    opacity: 0.5;
+  }
+  
+  .item-list-item:hover .item-list-item-title,
+  .item-list-item:hover .item-list-item-desc,
+  .item-list-item:hover .item-list-item-button {
+    opacity: 1;
+  }
+  
+  .item-list-item-img {
+    transition: all 1s ease-in-out;
+    width: 270px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+  
+  .item-list-item-title {
+    background-color: #4b4b4b;
+    color: white;
+    padding: 0 10px;
+    font-size: 32px;
+    font-weight: bold;
+    position: absolute;
+    top: 10%;
+    left: 50px;
+    opacity: 0;
+    transition: 1s all ease-in-out;
+  }
+  
+  .item-list-item-desc {
+    background-color: rgb(223, 223, 223);
+    padding: 10px;
+    font-size: 14px;
+    position: absolute;
+    top: 30%;
+    left: 50px;
+    width: 230px;
+    opacity: 0;
+    transition: 1s all ease-in-out;
+  }
+  
+  .item-list-item-button {
+    padding: 10px;
+    background-color: #4b4b4b;
+    color: white;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+    opacity: 0;
+    transition: 1s all ease-in-out;
+  }
+  
+  .arrow {
+    font-size: 120px;
+    position: absolute;
+    top: 90px;
+    right: 0;
+    color: rgb(138, 138, 138);
+    opacity: 0.5;
+    cursor: pointer;
+  }
+  
+  .item-list-title {
+    color: #040673;
+    text-align: center; 
+    margin: 0 auto;
+  }

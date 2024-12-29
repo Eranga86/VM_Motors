@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');
+@import url(https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css);
+@import url(https://code.jquery.com/jquery-3.4.1.slim.min.js);
+@import url(https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js);
+@import url(https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css);
+@import url(https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css);
+@import url(//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css);
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap);
+
+.new-bannerb {
+    background-color: rgb(7, 7, 7);
+    padding: 50px 0; 
+    
+  }
+  
+  .new-bannerb .container {
+    width: 100%;
+    max-width: 1200px; 
+    margin: 0 auto;
+    background-color: #020c28;/**/
+  }
+  
+  .new-bannerb img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .new-bannerb .content {
+    padding-left: 20px; 
+  }
+  
+  .new-bannerb h2 {
+    font-size: 24px;
+    color: white; 
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+  }
+  
+  .new-bannerb p {
+    font-size: 16px;
+    color:white; 
+    font-family: 'Roboto', sans-serif; 
+    text-align: justify;
+  }
+
+

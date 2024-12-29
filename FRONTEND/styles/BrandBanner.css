@@ -1,0 +1,27 @@
+.brand-banner {
+    padding: 20px;
+    background-color: #f8f8f8;
+    text-align: center;
+  }
+  
+  .brand-banner h2 {
+    margin-bottom: 20px;
+    font-size: 50px;
+    color: #333;
+  }
+  
+  .brand-logos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .brand-logo {
+    margin: 10px;
+  }
+  
+  .brand-logo img {
+    width: 250px;
+    height: auto;
+  }
+  

@@ -1,0 +1,246 @@
+/* General container for the CRM system */
+.crm-container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar styling */
+.sidebar {
+  width: 250px;
+  background-color: #081F62;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* User profile section in the sidebar */
+.user-profile {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.user-profile img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+/* Sidebar buttons styling */
+.sidebar button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  background: none;
+  border: 1px solid white;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.sidebar button:hover {
+  background: white;
+  color: #5078F2;
+}
+
+/* Main content area */
+.content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+/* Order card styling */
+.order-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px;
+  width: calc(33.333% - 20px);
+}
+
+.order-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Edit profile form styling */
+.edit-profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:100vh;
+  padding: 20px;
+}
+
+/*.signup-box {
+  width: 100%;
+  max-width: 450px;
+  max-height: 1000px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box; /* Ensures padding is included in width and height 
+}*/
+
+.signup-box h2 {
+  text-align: center;
+  margin-bottom: 20px; /* Add margin to separate the title from other elements */
+}
+
+.edit-profile-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.edit-profile-form .profile-picture {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.edit-profile-form .profile-picture img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  
+}
+.profile-picture input {
+  display: block;
+ 
+}
+.edit-profile-form  {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.edit-profile-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.edit-profile-form label {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.edit-profile-form input,
+.edit-profile-form button {
+  width: 100%;
+ 
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.edit-profile-form button {
+  background: #081F62;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: -5px;
+}
+
+.edit-profile-form button:hover {
+  background: #3057c9;
+}
+ 
+
+
+.virtual-garage-container {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding: 20px 0; /* Reduced padding to bring button closer */
+  margin: 0; /* Reset margin */
+}
+
+.feature-container {
+  position: relative;
+  margin: 0; /* Reset margin */
+  padding: 0; /* Reset padding */
+}
+
+.feature-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0; /* Keep the line height unchanged */
+  left: -1px;
+  width: 2px;
+  height: 250px; /* Keep the existing line height */
+  background-color: #ccc;
+}
+
+.feature {
+  flex: 1;
+  margin: 0 20px;
+  padding-left: 20px; /* Adjust only horizontal padding */
+  position: relative;
+}
+
+.feature img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px; /* Reduce the bottom margin */
+}
+
+.feature h3 {
+  font-size: 20px;
+  margin-bottom: 10px; /* Reduce the bottom margin */
+}
+
+.feature p {
+  font-size: 16px;
+  margin-bottom: 10px; /* Reduce the bottom margin */
+}
+
+.centerBold {
+  text-align: center;
+  font-weight: bold;
+}
+
+.virtual-garage-btn {
+  display: block;
+  margin: 0 auto; /* Remove extra top margin */
+  padding: 10px 20px;
+  background-color: #081F62;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.2s, box-shadow 0.2s;
+  animation: autoHover 2s infinite alternate;
+  margin-top: -300px;
+}
+
+@keyframes autoHover {
+  0% {
+      transform: scale(1);
+      box-shadow: none;
+  }
+  100% {
+      transform: scale(1.1);
+      box-shadow: 0 0 10px rgba(0, 123, 255, 0.7);
+  }
+}
+
+.virtual-garage-btn::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  border: 2px solid rgba(0, 123, 255, 0.5);
+  border-radius: 5px;
+  animation: pulse 1.5s infinite;
+}
