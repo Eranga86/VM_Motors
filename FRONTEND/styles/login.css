@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap");
+@import url("https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap");
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.owner-details-container {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 10px 500px;
+}
+
+.panel-info > .panel-heading {
+  color: #f8e6e6;
+  border-color: #7d1414;
+  background-color: #333333;
+  text-align: center;
+}
+
+.panel {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.panel-body {
+  padding: 15px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-group.row > .col-md-12 {
+  padding: 0 10px;
+}
+
+.form-control {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+strong.d-block {
+  display: block;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.btn {
+  margin-bottom: 10px;
+}

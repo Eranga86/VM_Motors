@@ -1,0 +1,149 @@
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css);
+@import url(https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js);
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js);
+
+.text-center {
+  font-weight: bold;
+  font-size: 50px;
+  margin: 20px;
+}
+
+.p1 {
+  font-size: 20px;
+  font-weight: initial;
+}
+
+/* Grid system for proper spacing */
+.row {
+  margin: 0;
+}
+
+.col-md-4 {
+  margin-bottom: 30px;
+}
+
+/* Card styling with consistent padding and full height */
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensure spacing is balanced */
+  padding: 10px;
+  height: 100%; /* Adjust height to fill space */
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visibility */
+}
+
+
+.card-body {
+  flex-grow: 1;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 10px; /* Add space above the footer */
+  min-height: 50px; /* Ensure enough space for the button */
+}
+
+
+.btn {
+  background-color: #2a2185;
+  color: white;
+  width: 100%; /* Make the button full-width */
+  padding: 10px 0; /* Padding for better touch target */
+  border-radius: 5px; /* Consistent button shape */
+  transition: background-color 0.3s ease;
+
+}
+
+.btn:hover {
+  background-color: #1a176a;
+  color: white;
+}
+
+.dec2 {
+  color: #ddd;
+  position: relative;
+  margin-bottom: 20px; /* Space between description and footer */
+  
+}
+.image{
+  height: 150px;
+  width: 155px;
+  justify-items: center;
+  margin: 10px;
+  padding: 10px;
+}
+
+/* Post creation form styling */
+.content {
+  border-radius: 10px;
+  border-color: black;
+  margin: 20px;
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.p2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.b {
+  position: relative;
+  left: auto;
+  color: #fff;
+  background-color: #2a2185;
+  border: none;
+
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.h5{
+  font-size: small;
+}
+
+.b:hover {
+  background-color: #1a176a;
+  color: white;
+}
+
+.btn1{
+  color: white;
+  border-radius: 5px;
+  font-size: medium;
+  background-color: #2a2185;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  
+}
+.btn1:hover {
+  background-color: #1a176a;
+  color: white;
+}
+
+.img-thumbnail{
+  width: 2700px;
+  height:400px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .text-center {
+    font-size: 30px;
+  }
+
+  .p1 {
+    font-size: 16px;
+  }
+
+  .p2 {
+    font-size: 24px;
+  }
+
+  .btn {
+    width: auto; /* Remove full-width on smaller screens */
+  }
+}
